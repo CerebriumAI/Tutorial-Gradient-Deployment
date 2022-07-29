@@ -18,7 +18,7 @@ def health_check():
 @app.post("/fraud-classfier")
 async def fraud_prediction(request: Request):
     request_data = await request.json()
-    df = pd.DataFrame(request_data)
+    df = pd.DataFrame([request_data])
 
     # Preprocessing
     categorical_cols = [
