@@ -1,4 +1,4 @@
-xgboost==0.90
+xgboost==1.5.1
 pandas
 numpy
 fastapi
